@@ -1,0 +1,92 @@
+.receipts
+    background: #000
+    color: #fff
+    padding: 5rem 21%
+    display: flex
+    flex-direction: column
+    width: 100%
+    &__wrap
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__heading
+        margin-top: 50px
+        margin-bottom: 40px
+        font-family: Playfair Display
+        font-style: normal
+        font-weight: bold
+        font-size: 38px
+        line-height: 48px
+        text-transform: uppercase
+    &__line
+        margin-bottom: 80px
+        height: 1px
+        width: 11%
+        background-color: white
+        margin-bottom: 80px
+    &__card
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: flex-start 
+        margin-bottom: 30px
+    &__img
+        // width: 100%
+        object-fit: contain
+        height: 405px
+        background-color: #191B1C
+    &__title
+        font-family: Playfair Display
+        font-size: 18px
+        line-height: 24px
+    &__price
+        font-family: Playfair Display
+        font-weight: bold
+        font-size: 16px
+        line-height: 21px
+        color: #D0D0D0
+        margin-top: 10px
+.card__list
+        display: flex
+        flex-direction: column
+        flex: 0 1 25%
+        height: 21.09375vw
+        max-width: 13.542vw
+        margin-bottom: 4%
+.span__block
+    margin: 1rem 0 0
+    display: flex
+    flex-direction: column
+
+//Слайдер
+.receipts__mobile
+    position: relative
+    padding: 0 60px
+.receipts__mobile .slick-arrow
+    position: absolute
+    top: 50%
+    margin: -30px 0 0 0
+    z-index: 10
+    font-size: 0
+    width: 30px
+    height: 30px
+    border: none
+.receipts__mobile .slick-arrow.slick-prev
+    left: 15px
+    background: #fff url('../img/leftarrow.svg') 0 0 / 100% no-repeat
+.receipts__mobile .slick-arrow.slick-next
+    right: 15px
+    background: #fff url('/../img/rightarrow.svg') 0 0 / 100% no-repeat
+.mobile__list
+    text-align: center
+.mobile__img
+    margin: 0 auto
+    background-color: #191B1C
+
+
+    
+
+
+
+    

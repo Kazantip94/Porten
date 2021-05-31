@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="http://fonts.cdnfonts.com/css/post-no-bills-jaffna" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>PORTEN</title>
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <div class="wrap-topbar">
+            <div class="wrap-topbar" id="header">
                 <div class="topbar">
                     <div class="topbar__block">
                         <img src="/img/phone_icon.svg" class="phone_icon">
@@ -45,10 +46,303 @@
                     </div>
                 </div>
                 <!-- /.navbar -->
+                <div class="burger-menu">
+                    <a href="" class="logo">porten</a>
+                    <a href="" class="burger-menu__button">
+                        <span class="burger-menu__lines"></span>
+                    </a>
+                    <nav class="burger-menu__nav">
+                        <a href="" class="burger-menu__link">Войти / Регестрация</a>
+                        <a href="" class="burger-menu__link">Понравилось</a>
+                        <a href="" class="burger-menu__link">Личный кабинет</a>
+                        <a href="" class="burger-menu__link">настройки</a>
+                        <a class="burger-menu__link">
+                            <img src="/img/bx-cart.svg" alt="">
+                        </a>
+                        <a class="burger-menu__link">
+                            <img src="/img/search.svg" alt="">
+                        </a>
+                            <div class="burger__block">
+                                <img src="/img/phone_icon.svg" class="phone_icon">
+                                <a href="tel:+88121234567" class="phone">8 (812) 123-45-67</a>
+                                <span class="work">Работаем 7 дней в неделю</span>
+                                <span class="time">9:00 ― 18:00</span>
+                            </div>
+                    </nav>
+                    <div class="burger-menu__overlay"></div>
+                </div>
             </div>
-        </div>
-        <!-- /.container -->
     </header>
     <!-- /.header -->
+    
+    <main>
+        <section class="hero">
+                <div class="hero__logo">
+                    <span class="hero__title">porten</span>
+                    <!-- /.hero__title -->
+                    <span class="hero__subtitle">санкт-петербург</span>
+                    <!-- /.hero__subtitle -->
+                </div>
+                   <!-- /.hero__logo -->
+                <div class="hero__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus interdum purus, est tortor pulvinar ut in. Fringilla a diam enim sed justo, sed iaculis sagittis. Tortor id eu interdum nec ut iaculis. Penatibus ullamcorper ultricies morbi ipsum sem metus pharetra, mi. Tortor nibh magna feugiat id nunc, dui nisl viverra.
+                </div>
+                <!-- /.hero_description -->
+        </section>
+        <!-- /.hero -->
+        <section class="season">
+                <div class="season__watch">
+                    <h2 class="title season__title">СЕЗОН 2020/21</h2>
+                    <!-- /.season__title -->
+                    <span class="line season__line"></span>
+                    <!-- /.season__line -->
+                    <div class="slider">
+                        <div class="slider__item">
+                            <img src="/img/clock.png" alt="" class="slider__img">
+                            <span class="slide__title">Louis XVI ATHOS</span>
+                            <span class="slide__price">165 000 руб.  </span>
+                        </div>
+                        <div class="slider__item">
+                            <img src="/img/clock.png" alt="" class="slider__img">
+                            <span class="slide__title">Louis XVI ATHOS</span>
+                            <span class="slide__price">165 000 руб.  </span>
+                        </div>
+                        <div class="slider__item">
+                            <img src="/img/clock.png" alt="" class="slider__img">
+                            <span class="slide__title">Louis XVI ATHOS</span>
+                            <span class="slide__price">165 000 руб.  </span>
+                        </div>
+                    </div>
+                    <!-- /.slider -->
+                </div>
+                <!-- /.season__watch -->
+                <div class="season__mobile">
+                    <div class="season__item">
+                        <img src="/img/clock.png" alt="" class="season__img">
+                        <span class="span__block">
+                            <span class="slide__title">Louis XVI ATHOS</span>
+                            <span class="slide__price">165 000 руб.  </span>
+                        </span>
+                    </div>
+                    <div class="season__item">
+                        <img src="/img/clock.png" alt="" class="season__img">
+                        <span class="span__block">
+                            <span class="slide__title">Louis XVI ATHOS</span>
+                            <span class="slide__price">165 000 руб.  </span>
+                        </span>
+                    </div>
+                    
+                    <div class="season__item">
+                        <img src="/img/clock.png" alt="" class="season__img">
+                        <span class="span__block">
+                            <span class="slide__title">Louis XVI ATHOS</span>
+                            <span class="slide__price">165 000 руб.  </span>
+                        </span>
+                    </div>
+                    <div class="season__item">
+                        <img src="/img/clock.png" alt="" class="season__img">
+                        <span class="span__block">
+                            <span class="slide__title">Louis XVI ATHOS</span>
+                            <span class="slide__price">165 000 руб.  </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="season__collection">
+                    <h2 class="title collection__title">Новая коллекция</h2>
+                    <p class="line collection__line"></p>
+                    <button class="button collection__button">Каталог</button>
+                </div>
+                <!-- /.season__collection -->
+        </section>
+        <!-- /.season -->
+        <section class="collection">
+                <div class="collection__content">
+                    <div class="collection__img"></div>
+                    <div class="collection__old">
+                        <h2 class="title old__title">КОЛЛЕКЦИЯ 2018
+                        </h2>
+                        <p class="line old__line"></p>
+                        <p class="collection__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis habitant dui arcu. Sagittis amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed scelerisque magna consectetur. Amet convallis quis gravida facilisis vulputate. Faucibus facilisi habitasse ipsum interdum dictum aliquet. Velit quis ullamcorper pulvinar nulla malesuada integer. Aenean praesent viverra nulla nullam natoque volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque risus dignissim egestas. Id aliquam a aliquam egestas leo orci pharetra sed diam. 
+                        </p>
+                        <button class="button old__button">посмотреть коллекцию</button>
+                    </div>
+                </div>
+        </section>
+        <!-- /.old__season -->
+        <section class="receipts">
+                <div class="receipts__wrap">
+                    <h2 class="title receipts__heading">новые поступления</h2>
+                    <p class="line receipts__line"></p>
+                <div class="receipts__card">
+                    <div class="card__list">
+                        <img src="/img/clock.png" alt="" class="receipts__img">
+                        <span class="span__block">
+                            <span class="receipts__title">Louis XVI ATHOS</span>
+                            <span class="receipts__price">165 000 руб.  </span>
+                        </span>
+                    </div>
+                    <div class="card__list">
+                        <img src="/img/clock.png" alt="" class="receipts__img">
+                        <span class="span__block">
+                            <span class="receipts__title">Louis XVI ATHOS</span>
+                            <span class="receipts__price">165 000 руб.  </span>
+                        </span>
+                    </div>
+                    <div class="card__list">
+                        <img src="/img/clock.png" alt="" class="receipts__img">
+                        <span class="span__block">
+                            <span class="receipts__title">Louis XVI ATHOS</span>
+                            <span class="receipts__price">165 000 руб.  </span>
+                        </span>
+                    </div>
+                    <div class="card__list">
+                        <img src="/img/clock.png" alt="" class="receipts__img">
+                        <span class="span__block">
+                            <span class="receipts__title">Louis XVI ATHOS</span>
+                            <span class="receipts__price">165 000 руб.  </span>
+                        </span>
+                    </div>
+                    <div class="card__list">
+                        <img src="/img/clock.png" alt="" class="receipts__img">
+                        <span class="span__block">
+                            <span class="receipts__title">Louis XVI ATHOS</span>
+                            <span class="receipts__price">165 000 руб.  </span>
+                        </span>
+                    </div>
+                    <div class="card__list">
+                        <img src="/img/clock.png" alt="" class="receipts__img">
+                        <span class="span__block">
+                            <span class="receipts__title">Louis XVI ATHOS</span>
+                            <span class="receipts__price">165 000 руб.  </span>
+                        </span>
+                    </div>
+                    <div class="card__list">
+                        <img src="/img/clock.png" alt="" class="receipts__img">
+                        <span class="span__block">
+                            <span class="receipts__title">Louis XVI ATHOS</span>
+                            <span class="receipts__price">165 000 руб.  </span>
+                        </span>
+                    </div>
+                    <div class="card__list">
+                        <img src="/img/clock.png" alt="" class="receipts__img">
+                        <span class="span__block">
+                            <span class="receipts__title">Louis XVI ATHOS</span>
+                            <span class="receipts__price">165 000 руб.  </span>
+                        </span>
+                    </div>
+                </div>
+                <!-- /.receipts__card -->
+                </div>
+                <!-- /.receipts__wrap -->
+                <div class="receipts__mobile">  
+                    
+                    <div class="mobile__list">
+                        <img src="/img/clock.png" alt="" class="mobile__img">
+                        <span class="span__block">
+                            <span class="receipts__title">Louis XVI ATHOS</span>
+                            <span class="receipts__price">165 000 руб.  </span>
+                        </span>
+                    </div> 
+                    <div class="mobile__list">
+                        <img src="/img/clock.png" alt="" class="mobile__img">
+                        <span class="span__block">
+                            <span class="receipts__title">Louis XVI ATHOS</span>
+                            <span class="receipts__price">165 000 руб.  </span>
+                        </span>
+                    </div> 
+                    <div class="mobile__list">
+                        <img src="/img/clock.png" alt="" class="mobile__img">
+                        <span class="span__block">
+                            <span class="receipts__title">Louis XVI ATHOS</span>
+                            <span class="receipts__price">165 000 руб.  </span>
+                        </span>
+                    </div> 
+                    <div class="mobile__list">
+                        <img src="/img/clock.png" alt="" class="mobile__img">
+                        <span class="span__block">
+                            <span class="receipts__title">Louis XVI ATHOS</span>
+                            <span class="receipts__price">165 000 руб.  </span>
+                        </span>
+                    </div> 
+                    <div class="mobile__list">
+                        <img src="/img/clock.png" alt="" class="mobile__img">
+                        <span class="span__block">
+                            <span class="receipts__title">Louis XVI ATHOS</span>
+                            <span class="receipts__price">165 000 руб.  </span>
+                        </span>
+                    </div> 
+                    
+                </div>
+                <!-- /.receipts__mobile -->
+        </section>
+        <!-- /.receipts -->
+        <section class="brands">
+                <h2 class="title brands__title">наши бренды</h2>
+                <p class="line brands__line"></p>
+                <div class="brands__slider">
+                    <div class="slide__item">
+                        <img src="/img/coco.png" alt="" class="brands__img">
+                    </div>
+                    <div class="slide__item">
+                        <img src="/img/coco.png" alt="" class="brands__img">
+                    </div>
+                    <div class="slide__item">
+                        <img src="/img/coco.png" alt="" class="brands__img">
+                    </div>
+                    <div class="slide__item">
+                        <img src="/img/coco.png" alt="" class="brands__img">
+                    </div>
+                </div>
+                <div class="brands__mobile">
+                    <div class="mobile__item">
+                        <img src="/img/coco.png" alt="" class="brands__img">
+                    </div>
+                    <div class="mobile__item">
+                        <img src="/img/coco.png" alt="" class="brands__img">
+                    </div>
+                    <div class="mobile__item">
+                        <img src="/img/coco.png" alt="" class="brands__img">
+                    </div>
+                    <div class="mobile__item">
+                        <img src="/img/coco.png" alt="" class="brands__img">
+                    </div>
+                </div>
+        </section>
+        <!-- /.brands -->
+    </main>
+    <footer class="footer">
+            <div class="footer__wrap">
+                <div class="footer__magazine">
+                    <span class="footer__title">О магазине</span>
+                    <span class="footer__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh. Egestas amet consectetur vel vitae aliquam dictum suspendisse. Lobortis eget consequat, tellus et et sed turpis. Pretium quisque vitae, amet, porttitor odio ultricies massa pharetra leo. Et ipsum urna fames in sit mi ultrices nisi, nunc.</span>
+                </div>
+                <div class="footer__category">
+                    <span class="footer__title">Категории</span>
+                    <div class="wrap__link">
+                        <button class="footer__link">часы</button>
+                        <button class="footer__link">браслеты</button>
+                        <button class="footer__link">ремни</button>
+                        <button class="footer__link">ювелирные изделия</button>
+                        <button class="footer__link">запонки</button>
+                    </div>
+                </div>
+                <div class="footer__mailing">
+                    <span class="footer__title">РАссылка</span>
+                    <span class="footer__description description--primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh.</span>
+                    <form action="" class="footer__form">
+                        <input type="text" class="message" name="user_quest" placeholder="Ваша почта" required="">
+                        <button class="footer__btn">ПОДПИСАТЬСЯ</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <span class="footer__privacy">© 2020 Все права защищены</span>
+                <span class="footer__figma">Сделано Figma.info</span>
+            </div>
+    </footer>
+    <!-- /.footer -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
