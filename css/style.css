@@ -1087,7 +1087,7 @@ p {
     flex-wrap: wrap;
     color: #969696; }
   .burger-menu__nav {
-    height: 45%; } }
+    height: 41%; } }
 
 @media screen and (max-width: 760px) {
   .login {
