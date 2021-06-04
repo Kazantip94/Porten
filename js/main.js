@@ -46,11 +46,11 @@ $(document).ready(function(){
         ]
     });
     $('.season__mobile').slick({
-        arrows: true,
+        arrows: false,
         slidesToShow: 3,
         slidesToScroll: 1,
-        draggable: false,
-        // centerMode: true
+        draggable: true,
+        centerMode: false,
         responsive: [
             {
                 breakpoint: 830,

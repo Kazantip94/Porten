@@ -1,7 +1,7 @@
 {
   "name": "porten",
   "version": "1.0.0",
-  "description": "",
+  "description": "https://kazantip94.github.io/Porten/",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,16 +17,16 @@
   },
   "homepage": "https://github.com/Kazantip94/Porten#readme",
   "dependencies": {
-    "del": "^6.0.0"  
+    "del": "^6.0.0"
   },
   "devDependencies": {
-    "gulp": "^4.0.2",
     "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^3.1.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-rename": "^2.0.0"
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0"
   }
 }

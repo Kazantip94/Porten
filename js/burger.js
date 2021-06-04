@@ -25,7 +25,7 @@ function burgerMenu(selector) {
         menu.toggleClass('burger-menu__active');
 
         if(menu.hasClass('burger-menu__active')) {
-            $('body').css('overflow', 'visible');
+            $('body').css('overflow', 'hidden');
         }else{
             $('body').css('overflow', 'visible');
         }

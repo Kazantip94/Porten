@@ -497,6 +497,7 @@ p {
   z-index: 20;
   display: flex;
   flex-flow: column;
+  margin-top: 60px;
   height: 35%;
   width: 100%;
   background-color: #0F0F0F;
@@ -532,6 +533,16 @@ p {
 
 .burger-menu__active .burger-menu__overlay {
   display: block; }
+
+.burger-menu__search {
+  position: fixed;
+  right: 120px;
+  margin-top: 20px; }
+
+.burger-menu__bx {
+  position: fixed;
+  right: 70px;
+  margin-top: 19px; }
 
 .hero {
   background: #000 url(../img/hero_img.jpg) center/cover;
@@ -639,7 +650,7 @@ p {
 .slider {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   margin-bottom: 20px; }
   .slider__item {
@@ -675,35 +686,19 @@ p {
   color: #D0D0D0; }
 
 .season__mobile {
-  position: relative;
-  padding: 0 60px; }
-
-.season__mobile .slick-arrow {
-  position: absolute;
-  top: 50%;
-  margin: -30px 0 0 0;
-  z-index: 10;
-  font-size: 0;
-  width: 30px;
-  height: 30px;
-  border: none; }
-
-.season__mobile .slick-arrow.slick-prev {
-  left: 15px;
-  background: url("../img/left-arrow.png") 0 0/100% no-repeat;
-  cursor: pointer; }
-
-.season__mobile .slick-arrow.slick-next {
-  right: 15px;
-  background: url("../img/right-arrow.png") 0 0/100% no-repeat;
-  cursor: pointer; }
+  position: relative; }
 
 .season__item {
-  text-align: center; }
+  max-width: 260px;
+  height: 405px;
+  margin-right: 23px; }
 
-.season__img {
-  margin: 0 auto;
-  background-color: #191B1C; }
+.season__block-img {
+  height: 325px;
+  background-color: #191B1C;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .collection__content {
   display: flex;
@@ -924,11 +919,9 @@ p {
     padding: 5.7rem 21%;
     width: 100%; }
   .footer__magazine {
-    flex: 1 1 33.333333%;
-    padding: 0 1.5%;
+    margin-right: 30px;
     display: flex;
-    flex-direction: column;
-    margin-left: -1.5%; }
+    flex-direction: column; }
   .footer__title {
     margin-bottom: 42px;
     font-family: Playfair Display;
@@ -940,8 +933,7 @@ p {
     font-size: 12px;
     line-height: 179%; }
   .footer__category {
-    flex: 1 1 33.333333%;
-    padding: 0 1.5%;
+    margin-right: 81px;
     display: flex;
     flex-direction: column; }
   .footer__link {
@@ -955,11 +947,8 @@ p {
     line-height: 150%;
     color: #D0D0D0; }
   .footer__mailing {
-    flex: 1 1 33.333333%;
-    padding: 0 1.5%;
     display: flex;
-    flex-direction: column;
-    margin-right: -1.5%; }
+    flex-direction: column; }
   .footer__form {
     width: 100%;
     display: flex; }
@@ -991,7 +980,8 @@ p {
 
 .wrap__link {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  width: 310px; }
 
 .description--primary {
   margin-bottom: 19px; }
@@ -1004,6 +994,10 @@ p {
   border: none;
   font-size: 0.8rem; }
 
+@media screen and (max-width: 1600px) {
+  .footer__wrap {
+    padding: 5.7rem 15%; } }
+
 @media screen and (max-width: 1400px) {
   .hero__description {
     padding: 0 10%; }
@@ -1013,6 +1007,9 @@ p {
     padding: 2rem 10%; } }
 
 @media screen and (max-width: 1100px) {
+  .logo {
+    position: fixed;
+    margin-top: 3px; }
   .brands {
     padding: 3rem 0; }
     .brands__slider {
@@ -1032,7 +1029,7 @@ p {
     .season__collection {
       margin: 3rem 0 0 0; }
   .collection__title {
-    margin-top: 3rem; }
+    margin-top: 21rem; }
   .collection__line {
     margin-bottom: 50px; }
   .collection__content {
@@ -1089,11 +1086,25 @@ p {
     display: none; }
   .burger__block {
     display: flex;
+    align-items: flex-end;
+    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    color: #969696; }
+    color: #969696;
+    margin-top: 30px; }
   .burger-menu__nav {
-    height: 41%; } }
+    height: 45%; }
+  .phone_icon {
+    display: none; }
+  .phone {
+    border: none;
+    padding: 0px 10px; }
+  .work {
+    border: none;
+    text-transform: uppercase;
+    padding: 5px 10px 5px 0; }
+  .time {
+    padding: 0px 10px; } }
 
 @media screen and (max-width: 760px) {
   .login {
@@ -1121,6 +1132,8 @@ p {
     font-size: 12px; }
   .button {
     font-size: 10px; }
+  .collection__title {
+    font-size: 32px; }
   .collection__img {
     height: 400px; }
   .collection__old {
@@ -1128,7 +1141,7 @@ p {
   .collection__description {
     margin-bottom: 45px; }
   .collection__button {
-    padding: 7px 28px; }
+    font-size: 18px; }
   .season__title {
     margin-top: 0; }
   .receipts {
@@ -1152,18 +1165,7 @@ p {
   .footer__privacy {
     font-size: 10px; }
   .footer__figma {
-    font-size: 10px; }
-  .burger__block {
-    align-items: center;
-    flex-direction: column; }
-  .phone_icon {
-    display: none; }
-  .phone {
-    border: none; }
-  .work {
-    border: none; }
-  .time {
-    padding: 0px 12px; } }
+    font-size: 10px; } }
 
 @media screen and (min-width: 1100px) {
   .brands__mobile.slick-slider {
