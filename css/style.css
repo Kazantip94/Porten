@@ -722,11 +722,11 @@ p {
 
 .collection__description {
   font-family: PT Sans;
-  font-size: 0.82rem;
-  line-height: 188%;
-  width: 471px;
+  line-height: 150%;
+  width: 538px;
   text-align: center;
-  margin-bottom: 65px; }
+  margin-bottom: 65px;
+  font-size: 14px; }
 
 .old__button {
   border: 1px solid white;
@@ -777,22 +777,16 @@ p {
     line-height: 48px;
     text-transform: uppercase; }
   .receipts__line {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     height: 1px;
     width: 11%;
-    background-color: white;
-    margin-bottom: 80px; }
+    background-color: white; }
   .receipts__card {
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 30px; }
-  .receipts__img {
-    object-fit: contain;
-    height: 405px;
-    background-color: #191B1C; }
+    flex-direction: column; }
+  .receipts__wrap-block {
+    display: flex;
+    margin-top: 40px; }
   .receipts__title {
     font-family: Playfair Display;
     font-size: 18px;
@@ -806,15 +800,18 @@ p {
     margin-top: 10px; }
 
 .card__list {
+  margin: 0 11px; }
+
+.card__list-img {
+  background-color: #191B1C;
+  width: 260px;
+  height: 325px;
   display: flex;
-  flex-direction: column;
-  flex: 0 1 25%;
-  height: 21.09375vw;
-  max-width: 13.542vw;
-  margin-bottom: 4%; }
+  justify-content: center;
+  align-items: center; }
 
 .span__block {
-  margin: 1rem 0 0;
+  margin: 25px 0 0 0;
   display: flex;
   flex-direction: column; }
 
@@ -893,8 +890,8 @@ p {
     text-transform: uppercase; }
   .footer__description {
     font-family: PT Sans;
-    font-size: 12px;
-    line-height: 179%; }
+    font-size: 14px;
+    line-height: 169%; }
   .footer__category {
     margin-right: 81px;
     display: flex;
@@ -906,7 +903,7 @@ p {
     border: none;
     cursor: pointer;
     font-family: PT Sans;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 150%;
     color: #D0D0D0; }
   .footer__mailing {
@@ -921,7 +918,7 @@ p {
     color: #d1d1d1;
     padding: 0.5rem 1rem;
     border: none;
-    font-size: 1rem;
+    font-size: 14px;
     text-transform: uppercase; }
   .footer__copyright {
     padding: 1rem 20%;
@@ -944,7 +941,7 @@ p {
 .wrap__link {
   display: flex;
   flex-wrap: wrap;
-  width: 310px; }
+  width: 330px; }
 
 .description--primary {
   margin-bottom: 19px; }
@@ -959,15 +956,21 @@ p {
 
 @media screen and (max-width: 1600px) {
   .footer__wrap {
-    padding: 5.7rem 15%; } }
+    padding: 5.7rem 15%; }
+  .footer__copyright {
+    padding: 1rem 15%; } }
 
 @media screen and (max-width: 1400px) {
   .hero__description {
     padding: 0 10%; }
+  .card__list {
+    margin: 0 8px; }
   .brands {
     padding: 2rem 10%; }
   .footer__wrap {
-    padding: 2rem 10%; } }
+    padding: 2rem 10%; }
+  .footer__copyright {
+    padding: 1rem 10%; } }
 
 @media screen and (max-width: 1100px) {
   .logo {
@@ -1027,6 +1030,8 @@ p {
     flex-direction: column; }
   .footer__btn {
     padding: 0.8rem 1rem; }
+  .footer__copyright {
+    padding: 1rem 20%; }
   .message {
     font-size: 1rem; }
   .wrap-navbar {
@@ -1089,12 +1094,6 @@ p {
     margin-bottom: 20px; }
   .line {
     margin-bottom: 20px; }
-  .slide__title {
-    font-size: 14px; }
-  .slide__price {
-    font-size: 12px; }
-  .button {
-    font-size: 10px; }
   .collection__title {
     font-size: 32px; }
   .collection__img {
@@ -1109,10 +1108,6 @@ p {
     margin-top: 0; }
   .receipts {
     padding: 2rem 0; }
-    .receipts__title {
-      font-size: 14px; }
-    .receipts__price {
-      font-size: 12px; }
   .brands {
     padding: 2rem 0;
     height: 270px; }
@@ -1121,14 +1116,8 @@ p {
   .footer__link {
     padding: 5px 10px;
     margin: 0 12px 10px 0; }
-  .footer__btn {
-    font-size: 12px; }
   .footer__copyright {
-    padding: 1rem 5%; }
-  .footer__privacy {
-    font-size: 10px; }
-  .footer__figma {
-    font-size: 10px; } }
+    padding: 1rem 5%; } }
 
 @media screen and (min-width: 1100px) {
   .brands__mobile.slick-slider {
